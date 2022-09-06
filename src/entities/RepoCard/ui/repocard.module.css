@@ -1,0 +1,4 @@
+.repoCard {
+    @apply flex flex-col gap-1 items-start relative border py-3 px-5 rounded mb-2;
+    @apply hover:shadow-md hover:bg-gray-100 transition-shadow transition-colors cursor-pointer;
+}
