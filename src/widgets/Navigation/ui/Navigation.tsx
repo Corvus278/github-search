@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { Link } from "react-router-dom";
+import { REACT_APP_ROOT_URL } from "../../../shared/lib/config";
 
 type Props = {};
 
@@ -11,15 +12,15 @@ export const Navigation: FC<Props> = (props) => {
       }
     >
       <h3 className={"font-bold"}>
-        <Link to={"/"}>Github Search</Link>
+        <Link to={`${REACT_APP_ROOT_URL}`}>Github Search</Link>
       </h3>
 
       <ul className={"flex gap-2"}>
         <li>
-          <Link to={"/"}>Home</Link>
+          <Link to={REACT_APP_ROOT_URL}>Home</Link>
         </li>
         <li>
-          <Link to={"/favourites"}>Favourites</Link>
+          <Link to={`${REACT_APP_ROOT_URL}/favourites`}>Favourites</Link>
         </li>
       </ul>
     </nav>
